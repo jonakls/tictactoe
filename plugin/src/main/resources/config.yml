@@ -1,0 +1,88 @@
+options:
+  decoration-items: true
+  enable-sounds: true
+  enable-titles: true
+rewards:
+  on-win-game:
+    - "eco give %player% 500"
+  on-lose-game:
+    - "say %player% has lost the game"
+  on-tie-game:
+    - "say %player% has tied the game"
+inventory-game:
+  # Title of tictactoe game in inventory
+  title-inventory: "&cTic&6Tac&aToe"
+
+  # Decoration of tictactoe game in inventory
+  decoration-item:
+    material: STAINED_GLASS_PANE
+
+  # X item of tictactoe game in inventory
+  x-item-game:
+    material: PLAYER_HEAD
+    textures: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVkNWM3NWY2Njc1ZWRjMjkyZWEzNzg0NjA3Nzk3MGQyMjZmYmQ1MjRlN2ZkNjgwOGYzYTQ3ODFhNTQ5YjA4YyJ9fX0="
+    item-name: "&d&k|&a &lX &d&k|"
+    lore:
+      - "&e&m-------"
+      - "&a XXXXXX"
+      - "&e&m-------"
+
+  # O item of tictactoe game in inventory
+  o-item-game:
+    material: PLAYER_HEAD
+    textures: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUzODViMDVlN2FmNTQ2MzViMTBmMDJjZGIwMDQ1NjcyYzkxYzcyNGNmMTY0ZTUxOTNhNGY3YmU3MjkyZmYzMCJ9fX0="
+    item-name: "&d&k|&a &lO &d&k|"
+    lore:
+      - "&e&m-------"
+      - "&a OOOOO"
+      - "&e&m-------"
+
+  # One player of tictactoe game in inventory
+  player-one-item:
+    material: PLAYER_HEAD
+    item-name: "&a%player%'s"
+    lore:
+      - "&e&m-------"
+      - "&aWins: &f%wins%"
+      - "&aLosses: &f%losses%"
+      - "&aTies: &f%ties%"
+      - "&aGames played: &f%played%"
+      - "&e&m-------"
+
+  # Two player of tictactoe game in inventory
+  player-two-item:
+    material: PLAYER_HEAD
+    item-name: "&c%player%'s"
+    lore:
+      - "&e&m-------"
+      - "&aWins: &f%wins%"
+      - "&aLosses: &f%losses%"
+      - "&aTies: &f%ties%"
+      - "&aGames played: &f%played%"
+      - "&e&m-------"
+
+sounds:
+  # Sound of tictactoe game in inventory
+  click-sound:
+    sound: BLOCK_NOTE_PLING
+    volume: 1.0
+    pitch: 1.0
+  win-sound:
+    sound: BLOCK_NOTE_PLING
+    volume: 1.0
+    pitch: 1.0
+  lose-sound:
+    sound: BLOCK_NOTE_PLING
+    volume: 1.0
+    pitch: 1.0
+messages:
+  reload-command: "&aTic&6Tac&aToe &areloaded!"
+  game:
+    win-game: "&aCongratulations %player%! You won the game!"
+    lose-game: "&cOh no! %player% has lost the game!"
+    start-game: "&a%player% has started the game!"
+    game-time-left: "&cGame will end in %time% seconds!"
+    game-time-over: "&cGame has ended!"
+    game-tie: "&eGame has ended in a tie!"
+
+
